@@ -9,7 +9,7 @@
   <a href="#introduction">Introduction</a> •
   <a href="#build">Build</a> •
   <a href="#run">Run</a> •
-  <a href="#Streaming Video to Amazon Kinesis Video Streams">Video Player</a> •
+  <a href="#streaming-video-to-amazon-kinesis-video-streams">Video Player</a> •
   <a href="#related">Related</a> 
 </p>
 
