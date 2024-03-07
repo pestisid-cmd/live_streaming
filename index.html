@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream Player</title>
+    <style>
+        
+        body {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0; 
+            background-color: #f0ebe5; 
+            font-family: Arial, sans-serif; 
+        }
+        .video-container {
+            text-align: center;
+            background: linear-gradient(to bottom right, #a52a2a, #deb887); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            width: 80%;
+            max-width: 640px;
+        }
+        h1 {
+            color: #fff; 
+            text-decoration: underline; 
+            font-size: 2em; 
+            font-weight: bold; 
+            margin-bottom: 20px; 
+        }
+        .video-box {
+            width: 100%; 
+            max-width: 640px; 
+            border-radius: 5px;
+        }
+        footer {
+            font-style: italic;
+            padding: 10px 0; 
+            width: 100%; 
+            text-align: center; 
+            font-size: 0.9em; 
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <h1>Live Stream Player</h1>
+        <video class="video-box" id="videoPlayer" controls autoplay></video>
+    </div>
+    <footer>
+        Created by Siddhartha Jain
+    </footer>
+    <!-- Load AWS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/aws-sdk@2/dist/aws-sdk.min.js"></script>
+    <!-- Load KVS WebRTC -->
+    <script src="https://unpkg.com/amazon-kinesis-video-streams-webrtc/dist/kvs-webrtc.min.js"></script>
+    <!-- Load HLS.js library first -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <!-- Then, load your subscriber.js script which depends on HLS.js -->
+    <script src="subscriber.js"></script>
+</body>
+</html>
