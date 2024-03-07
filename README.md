@@ -55,12 +55,19 @@ Please ensure you have:
   sudo xargs -a apt-requirements.txt apt-get install -y
   ```
 
-- #### Clone the Amazon Kinesis Video Streams Producer SDK C++ Repository
-  The project utilizes the Amazon Kinesis Video Streams Producer SDK C++ for video streaming. Clone the SDK repository from GitHub to your local machine:  
+- #### Clone the Project Repository
+
+  Before cloning the Amazon Kinesis Video Streams Producer SDK C++ repository, clone the project repository from GitHub to your local machine.:
+  ```
+  git clone https://github.com/pestisid-cmd/live_streaming.git
+  ```
+
+- #### Clone the Amazon Kinesis Video Streams Producer SDK C++ Repository inside Your Project Directory
+
+  With your terminal navigated inside the project directory, clone the Amazon Kinesis Video Streams Producer SDK C++ repository. This step ensures that the SDK is part of your project, which is useful for managing dependencies and versioning:  
   ```
   git clone https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-cpp.git
   ```
-
 
 ### Configuration and Building the SDK
 #### Prepare the Build Directory
